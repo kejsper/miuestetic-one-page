@@ -3,8 +3,6 @@
     .martop-btn {
       margin-top: 30px;
     }
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -15,6 +13,24 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+
   .martop {
     margin-top: 30px;
   }
