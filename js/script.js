@@ -16,8 +16,7 @@ $(document).ready(function () {
 
   // no scrolling for map in contact section
   mapContainer.click(function(){
-      console.log('dupa');
-			$(this).find('iframe').addClass('clicked')});
+      $(this).find('iframe').addClass('clicked')});
 	mapContainer.mouseleave(function(){
 			$(this).find('iframe').removeClass('clicked')});
 

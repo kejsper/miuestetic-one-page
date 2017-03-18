@@ -1,3 +1,11 @@
+@media screen and (min-width: 992px) {
+
+  .package-height {
+    height: 220px
+  }
+
+}
+
 @media screen and (max-width: 1200px) {
 
     .martop-btn {
@@ -38,6 +46,11 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+  .package-height {
+    height: 260px;
+  }
+
 }
 
 /* basic website styling */
@@ -246,7 +259,7 @@ i.fa-check {
   position: relative;
 }
 
-.map-container iframe:clicked {
+.map-container iframe .clicked {
   pointer-events: auto;
 }
 
