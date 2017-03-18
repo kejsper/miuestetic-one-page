@@ -13,7 +13,7 @@ $(document).ready(function () {
     setTimeout(adjustSlider, 100);
   });
 
-  // Inside links animation
+  // Internal links animation
   $('a[href^="#"]').on('click', function (event) {
     var target = $($(this).attr('href'));
     console.log(target);

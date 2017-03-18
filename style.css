@@ -3,6 +3,8 @@
     .martop-btn {
       margin-top: 30px;
     }
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -161,6 +163,17 @@ nav.navbar {
 .sliderfit {
 width: auto;
 height: auto;
+}
+
+/* Gallery stylying */
+
+.gal {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: black;
+  border: solid 3px black;
 }
 
 /* buy package styling */
