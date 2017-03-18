@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var sliderfit = $('.sliderfit'),
-      scrolltop = $('#scrolltop');
+      scrolltop = $('#scrolltop'),
+      mapContainer = $('.map-container');
 
   showScrolltop();
   adjustSlider();
@@ -14,10 +15,10 @@ $(document).ready(function () {
   });
 
   // no scrolling for map in contact section
-  $('.map-container').click(function(){
+  mapContainer.click(function(){
       console.log('dupa');
 			$(this).find('iframe').addClass('clicked')});
-	$('.map-container').mouseleave(function(){
+	mapContainer.mouseleave(function(){
 			$(this).find('iframe').removeClass('clicked')});
 
   // Internal links animation
