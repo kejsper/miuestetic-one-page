@@ -259,7 +259,7 @@ i.fa-check {
   position: relative;
 }
 
-.map-container iframe .clicked {
+.map-container iframe.clicked {
   pointer-events: auto;
 }
 
