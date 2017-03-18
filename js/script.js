@@ -13,7 +13,14 @@ $(document).ready(function () {
     setTimeout(adjustSlider, 100);
   });
 
-  // Inside links animation
+  // no scrolling for map in contact section
+  $('.map-container').click(function(){
+      console.log('dupa');
+			$(this).find('iframe').addClass('clicked')});
+	$('.map-container').mouseleave(function(){
+			$(this).find('iframe').removeClass('clicked')});
+
+  // Internal links animation
   $('a[href^="#"]').on('click', function (event) {
     var target = $($(this).attr('href'));
     console.log(target);
