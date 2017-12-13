@@ -165,10 +165,10 @@ height: auto;
 }
 
 .tab-menu {
-  background-color: #f5f5f5;
+  background-color: #fff;
   color: #161616;
   padding: 15px 0;
-  border: 2px #fff solid;
+  border: 2px #f5f5f5 solid;
   display: block;
   cursor: pointer;
 }
