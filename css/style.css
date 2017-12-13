@@ -1,58 +1,3 @@
-@media screen and (min-width: 992px) {
-
-  .package-height {
-    height: 220px
-  }
-
-}
-
-@media screen and (max-width: 1200px) {
-
-    .martop-btn {
-      margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-  .slider-margin {
-    margin-top: 20px;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1.15rem;
-  }
-
-  h6 {
-    font-size: 0.9rem;
-  }
-
-
-  .martop {
-    margin-top: 30px;
-  }
-  .margin-zero {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .package-height {
-    height: 260px;
-  }
-
-}
-
 /* basic website styling */
 html, body {
   font-family: "Open Sans", sans-serif;
@@ -277,4 +222,59 @@ i.fa-check {
   text-align: center;
   padding-top: 6px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+
+  .package-height {
+    height: 220px
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .martop-btn {
+      margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .slider-margin {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+
+  .martop {
+    margin-top: 30px;
+  }
+  .margin-zero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .package-height {
+    height: 260px;
+  }
+
 }
