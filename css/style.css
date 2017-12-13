@@ -178,7 +178,7 @@ height: auto;
 }
 
 .tab-menu-item {
-  margin: 15px 10px 15px 25px;
+  padding: 15px 10px 15px 25px;
 }
 
 div.tab-menu-item ul > li {
