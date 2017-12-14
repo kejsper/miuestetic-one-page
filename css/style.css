@@ -80,6 +80,37 @@ footer {
   text-align: center;
 }
 
+/* modal styling */
+.modal {
+  margin: 0 auto;
+}
+.modal-dialog {
+  width: 100%;
+  max-width: 1000px;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-header {
+  border-bottom: 1px solid #f6f6f6;
+}
+.modal-body {
+  font-family: "Raleway", sans-serif;
+  color: #272727;
+}
+.modal-footer {
+  border-top: 1px solid #f6f6f6;
+  font-family: "Raleway", sans-serif;
+  color: #272727;
+}
+
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 80%;
+  }
+}
+
 /* navbar styling */
 nav.navbar {
   background: #fff;
@@ -191,16 +222,16 @@ height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .btn-pricelist {
-  width: 250px;
+  width: 300px;
   height: 80px;
   background-color: #f6f6f6;
   color: #272727;
   border-radius: 0;
-  border-color: #bd187e;
+  border-color: #7F7F7F;
 }
 .btn-pricelist:hover {
   color: #fff;
