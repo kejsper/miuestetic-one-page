@@ -6,6 +6,8 @@ $(document).ready(function () {
   showScrolltop();
   adjustSlider();
 
+  $('.welcome').enllax();
+
   $(document).on('scroll', function () {
     setTimeout(showScrolltop, 300);
   });
