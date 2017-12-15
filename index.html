@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
-    <title>Miu Estetic</title>
+    <title>Miu Estetic - Salon kosmetyczny</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
@@ -11,15 +11,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.enllax.min.js"></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLongTitle">Pielęgnacja dłoni i stóp</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Tutaj będzie cennik. Albo i nie.
+          </div>
+          <div class="modal-footer">
+            Umów się na wizytę w naszym salonie!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end -->
+
     <!-- Navigation starts here -->
     <nav class="navbar navbar-toggleable-md fixed-top navbar-fixed-width navbar-light">
       <div class="container margin-zero">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#slider"><img src="img/logo.png" alt="miu estetic logo"></a>
+        <a class="navbar-brand" href="#welcome"><img src="img/logo.png" alt="miu estetic logo"></a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
           <ul class="navbar-nav mt-2 mt-md-0">
             <li class="nav-item">
@@ -28,6 +54,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link" href="#gallery">INSTYTUT</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pricelist">CENNIK</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="#package">PROMOCJE</a>
             </li>
@@ -40,8 +69,14 @@
     </nav>
     <!-- Navigation ends here -->
 
+    <div id="welcome" class="welcome" data-enllax-ratio="0.7">
+      <div class="welcome-wrapper">
+        <div class="welcome-header">Witamy w Miu Estetic</div>
+      </div>
+    </div>
+
     <!-- Slider starts here -->
-    <div id="slider" class="carousel slide hidden-md-down" data-ride="carousel">
+    <!-- <div id="slider" class="carousel slide hidden-md-down" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#slider" data-slide-to="0" class="active"></li>
         <li data-target="#slider" data-slide-to="1"></li>
@@ -66,30 +101,31 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div> -->
     <!-- Slider ends here -->
 
     <!-- About us section starts here -->
     <div id="about" class="padbet slider-margin"></div>
-    <section>
-      <div class="container">
-        <h1 class="text-center">Witamy w Miu Estetic</h1>
-        <div class="line"></div>
-        <p class="text-center">Kilka słów o naszym gabinecie</p>
-        <div class="row padbet">
-          <div class="col-lg-6">
-            <img src="img/owner.jpg" class="img-thumbnail">
-          </div>
-          <div class="col-lg-6 martop">
-            <h3>Marzena Dalecka</h3>
-            <h5 style="color: #b9b9b9">Właściciel gabinetu</h5>
-            <h6 style="color: #b9b9b9">ekspert terapii anti-age</h5>
-            <br>
-            <p>W MIU estetic stawiamy na profesjonalizm, wykwalifikowanych specjalistów, sprawdzone technologie oraz najlepsze produkty. Gwarantujemy bezpieczeństwo, dyskrecję i spektakularne rezultaty bez ryzyka. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-          </div>
+    <section class="container">
+      <h1 class="text-center">Witamy w Miu Estetic</h1>
+      <div class="line"></div>
+      <p class="text-center">Kilka słów o naszym gabinecie</p>
+      <div class="row padbet">
+        <div class="col-lg-6">
+          <img src="img/owner.jpg" class="img-thumbnail">
         </div>
+        <article class="col-lg-6 martop">
+          <h3>Marzena Dalecka</h3>
+          <h5 style="color: #b9b9b9">Właściciel gabinetu</h5>
+          <h6 style="color: #b9b9b9">ekspert terapii anti-age</h5>
+          <br>
+          <p>W naszym Instytucie pracujemy na sprawdzonych kosmetykach i cenionych certyfikowanych preparatach dostępnych na rynku europejskim.</p>
+          <p>Oferujemy szeroką gamę zabiegów kosmetycznych oraz zabiegów z zakresu kosmetyki estetycznej.</p>
+          <p>Metody przeprowadzania zabiegów proponowane w naszym instytucie są wynikiem długoletnich praktyk oraz ciągłego udoskonalania naszej wiedzy.</p> 
+          <p>Dzięki połączeniu najnowocześniejszych osiągnięć kosmetyki i medycyny osiągamy spektakularne rezultaty pozwalające na długo zachować pożądane efekty.</p>
+          <p>W miuestetic stawiamy na profesjonalizm, wykalifikowanych specjalistów,sprawdzone technologie oraz najlepsze produkty. </p>
+          <p>Gwarantujemy bezpieczeństwo,dyskrecję i spektakularne rezultaty bez ryzyka-bo dla nas każdy klient jest wyjątkowy.</p>
+        </article>
       </div>
     </section>
     <!-- About us section ends here -->
@@ -101,121 +137,99 @@
         <h1 class="text-center">Nasz Instytut</h1>
         <div class="line"></div>
         <p class="text-center">Kilka zdjęć naszych wnętrz</p>
-        <!-- big screen gallery -->
-        <div class="container padbet hidden-md-down">
+        <div class="container padbet">
           <div class="row">
-            <div class="col-md-4 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/1.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/1.jpg" alt="Zdjęcie gabinetu 1" class="img-thumbnail">
               </a>
             </div>
-            <div class="col-md-4 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/2.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/2.jpg" alt="Zdjęcie gabinetu 2" class="img-thumbnail">
               </a>
             </div>
-            <div class="col-md-4 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/3.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/3.jpg" alt="Zdjęcie gabinetu 3" class="img-thumbnail">
               </a>
             </div>
-          </div>
-          <div class="row">
-           <div class="col-md-4 gal-style img-zoom">
-             <a href="img/gabinet/4.jpg" data-lightbox="gabinet">
-               <img src="img/gabinet/4.jpg" alt="Zdjęcie gabinetu 4" class="img-thumbnail">
-             </a>
-           </div>
-           <div class="col-md-4 gal-style img-zoom">
-             <a href="img/gabinet/5.jpg" data-lightbox="gabinet">
-               <img src="img/gabinet/5.jpg" alt="Zdjęcie gabinetu 5" class="img-thumbnail">
-             </a>
-           </div>
-           <div class="col-md-4 gal-style img-zoom">
-             <a href="img/gabinet/6.jpg" data-lightbox="gabinet">
-               <img src="img/gabinet/6.jpg" alt="Zdjęcie gabinetu 6" class="img-thumbnail">
-             </a>
-           </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 gal-style img-zoom">
-              <a href="img/gabinet/7.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/7.jpg" alt="Zdjęcie gabinetu 7" class="img-thumbnail">
-              </a>
-            </div>
-            <div class="col-md-4 gal-style img-zoom">
-              <a href="img/gabinet/8.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/8.jpg" alt="Zdjęcie gabinetu 8" class="img-thumbnail">
-              </a>
-            </div>
-            <div class="col-md-4 gal-style img-zoom">
-              <a href="img/gabinet/9.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/9.jpg" alt="Zdjęcie gabinetu 9" class="img-thumbnail">
-              </a>
-            </div>
-          </div> <!-- row -->
-        </div>
-
-        <!-- small screen gallery -->
-        <div class="container padbet hidden-lg-up">
-          <div class="row">
-            <div class="col-6 gal-style img-zoom">
-              <a href="img/gabinet/1.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/1.jpg" alt="Zdjęcie gabinetu 1" class="img-thumbnail">
-              </a>
-            </div>
-            <div class="col-6 gal-style img-zoom">
-              <a href="img/gabinet/2.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/2.jpg" alt="Zdjęcie gabinetu 2" class="img-thumbnail">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 gal-style img-zoom">
-              <a href="img/gabinet/3.jpg" data-lightbox="gabinet">
-                <img src="img/gabinet/3.jpg" alt="Zdjęcie gabinetu 3" class="img-thumbnail">
-              </a>
-            </div>
-            <div class="col-6 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/4.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/4.jpg" alt="Zdjęcie gabinetu 4" class="img-thumbnail">
               </a>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/5.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/5.jpg" alt="Zdjęcie gabinetu 5" class="img-thumbnail">
               </a>
             </div>
-            <div class="col-6 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/6.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/6.jpg" alt="Zdjęcie gabinetu 6" class="img-thumbnail">
               </a>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/7.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/7.jpg" alt="Zdjęcie gabinetu 7" class="img-thumbnail">
               </a>
             </div>
-            <div class="col-6 gal-style img-zoom">
+            <div class="col-6 col-md-4 gal-style img-zoom">
               <a href="img/gabinet/8.jpg" data-lightbox="gabinet">
                 <img src="img/gabinet/8.jpg" alt="Zdjęcie gabinetu 8" class="img-thumbnail">
               </a>
             </div>
+            <div class="col-6 col-md-4 gal-style img-zoom hidden-md-down">
+              <a href="img/gabinet/9.jpg" data-lightbox="gabinet">
+                <img src="img/gabinet/9.jpg" alt="Zdjęcie gabinetu 9" class="img-thumbnail">
+              </a>
+            </div>
           </div>
-
-      </div>
+        </div>
       <div class="padbet"></div>
     </section>
     <!-- Section gallery ends here -->
 
+    <!-- Section price list starts here -->
+    <div id="pricelist" class="padbet"></div>
+    <section class="stdback">
+      <div class="container">
+        <h1 class="text-center">Cennik</h1>
+        <div class="line"></div>
+        <p class="text-center">Zapoznaj się z naszym cennikiem</p>
+
+        <div class="padbet pricelist-container">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Pielęgnacja dłoni i stóp
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Kosmetyka okolicy oka
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Depilacja woskiem
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Piercing
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Makijaż permanentny
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Zabiegi na twarz i ciało
+          </button>
+          <button type="button" class="btn btn-primary btn-pricelist" data-toggle="modal" data-target="#exampleModalLong">
+            Medycyna estetyczna
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section price list ends here -->
 
     <!-- Buy package section starts here -->
-    <div id="package" class="padbet"></div>
-    <section class="stdback">
+    <div id="package" class="padbet difback"></div>
+    <section class="difback">
       <div class="container">
         <h1 class="text-center">Pakiety upominkowe</h1>
         <div class="line"></div>
@@ -229,7 +243,7 @@
             <div class="col-3 tabs tab-menu" id="tab-button-4">PAKIET 4</div>
           </div>
           <div class="row">
-            <div class="col-12 tab-menu-item package-height" id="tab-item-1">
+            <article class="col-12 tab-menu-item package-height" id="tab-item-1">
               <h3>3 kroki do dobrego samopoczucia</h3>
               <ul class="list-unstyled">
                 <li><i class="fa fa-check"></i> manicure hybrydowy</li>
@@ -237,8 +251,8 @@
                 <li><i class="fa fa-check"></i> relaksacyjny masaż twarzy</li>
               </ul>
               <h4>Pakiet o wartości 200 zł – tylko teraz w cenie 100 zł</h4>
-            </div>
-            <div class="col-12 tab-menu-item hidden package-height" id="tab-item-2">
+            </article>
+            <article class="col-12 tab-menu-item hidden package-height" id="tab-item-2">
               <h3>Ekspresowa pielęgnacja 3 w 1</h3>
               <ul class="list-unstyled">
                 <li><i class="fa fa-check"></i> GeneO+ (w tym maska)</li>
@@ -246,8 +260,8 @@
                 <li><i class="fa fa-check"></i> Pedicure</li>
               </ul>
               <h4>Pakiet o wartości 400 zł – tylko teraz w cenie 200 zł</h4>
-            </div>
-            <div class="col-12 tab-menu-item hidden package-height" id="tab-item-3">
+            </article>
+            <article class="col-12 tab-menu-item hidden package-height" id="tab-item-3">
               <h3>Odmładzanie dobrane idealnie</h3>
               <ul class="list-unstyled">
                 <li><i class="fa fa-check"></i> Botox (wybrana okolica)</li>
@@ -255,15 +269,15 @@
 
               </ul>
               <h4>Pakiet o wartości 600 zł – tylko teraz w cenie 300 zł</h4>
-            </div>
-            <div class="col-12 tab-menu-item hidden package-height" id="tab-item-4">
+            </article>
+            <article class="col-12 tab-menu-item hidden package-height" id="tab-item-4">
               <h3>Drobne przyjemności</h3>
               <ul class="list-unstyled">
                 <li><i class="fa fa-check"></i> Masaż Dotyk Anioła</li>
 
               </ul>
               <h4>Pakiet o wartości 160 zł – tylko teraz w cenie 80 zł</h4>
-            </div>
+            </article>
           </div>
           <div class="row">
             <div class="col-12">
@@ -277,8 +291,8 @@
     <!-- Buy package section ends here -->
 
     <!-- Section contact us -->
-    <div id="contact" class="padbet difback"></div>
-    <section class="difback">
+    <div id="contact" class="padbet stdback"></div>
+    <section class="stdback">
       <div class="container">
         <h1 class="text-center">Kontakt</h1>
         <div class="line"></div>
@@ -287,7 +301,7 @@
           <div class="col-lg-4 martop">
             <h3>Telefon:</h3>
             <div class="hidden-md-up"><p><a href="tel:+48717999917">+48 71 799 99 17</a></p></div>
-            <div class="hidden-lg-down"><p>+48 71 799 99 17</p></div>
+            <div class="hidden-sm-down"><p>+48 71 799 99 17</p></div>
             <h3>Adres:</h3>
             <p>ul. Gubińska 8</p>
             <p>54-434 Wrocław</p>
@@ -321,10 +335,6 @@
     </footer>
     <!-- Footer section ends here -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
