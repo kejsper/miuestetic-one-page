@@ -186,7 +186,7 @@ nav.navbar {
 }
 
 .welcome-header {
-  margin-top: -100px;
+  margin: -100px auto 0 auto;
   font-size: 2.5em;
   font-family: "Raleway", sans-serif;
   color: #272727;
@@ -237,6 +237,7 @@ height: auto;
   color: #fff;
   background-color: #bd187e;
   border-color: #f6f6f6;
+  cursor: pointer;
 }
 .btn-pricelist:focus {
   box-shadow: none;
