@@ -214,14 +214,20 @@ nav.navbar {
   color: #272727;
 }
 
-/* slider styling */
-#slider {
-  padding-top: 83px;
+/* About Us styling */
+
+.about-us-text {
+  text-align: justify;
 }
 
-.sliderfit {
-width: auto;
-height: auto;
+.about-us-sign {
+  padding-top: 25px;
+  width: 100%;
+  text-align: right;
+}
+
+.about-us-position {
+  color: #b9b9b9;
 }
 
 /* Gallery stylying */
