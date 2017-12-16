@@ -101,17 +101,31 @@ footer {
 }
 .table-hover td {
   padding: 0.5rem;
+  font-size: 0.9em;
+}
+.table-price {
+  text-align: right;
 }
 .modal-footer {
   border-top: 0;
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
-
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    width: 75%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .modal-dialog {
-    width: 80%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-dialog {
+    width: 40%;
   }
 }
 
@@ -226,7 +240,7 @@ height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .btn-pricelist {
@@ -246,6 +260,12 @@ height: auto;
 .btn-pricelist:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+@media screen and (min-width: 480px) {
+  .pricelist-container {
+    justify-content: space-between;
+  }
 }
 
 /* buy package styling */
