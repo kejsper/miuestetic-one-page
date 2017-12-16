@@ -85,29 +85,51 @@ footer {
   margin: 0 auto;
 }
 .modal-dialog {
-  width: 100%;
-  max-width: 1000px;
+  width: 95%;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .modal-content {
   border-radius: 0;
 }
 .modal-header {
-  border-bottom: 1px solid #f6f6f6;
+  border-bottom: 0;
 }
 .modal-body {
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
+.table-hover td {
+  padding: 0.5rem;
+  font-size: 0.9em;
+}
+.table-price {
+  text-align: right;
+}
+.table-price-title {
+  font-weight: 600;
+  text-align: center;
+}
 .modal-footer {
-  border-top: 1px solid #f6f6f6;
+  border-top: 0;
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
-
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    width: 75%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .modal-dialog {
-    width: 80%;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-dialog {
+    width: 45%;
   }
 }
 
@@ -164,7 +186,6 @@ nav.navbar {
 
 .welcome {
   position: relative;
-  width: 100%;
   height: 100vh;
   background-image: url('../img/gabinet/2.jpg');
   background-size: cover;
@@ -186,20 +207,26 @@ nav.navbar {
 }
 
 .welcome-header {
-  margin-top: -100px;
+  margin: -100px auto 0 auto;
   font-size: 2.5em;
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
 
-/* slider styling */
-#slider {
-  padding-top: 83px;
+/* About Us styling */
+
+.about-us-text {
+  text-align: justify;
 }
 
-.sliderfit {
-width: auto;
-height: auto;
+.about-us-sign {
+  padding-top: 25px;
+  width: 100%;
+  text-align: right;
+}
+
+.about-us-position {
+  color: #b9b9b9;
 }
 
 /* Gallery stylying */
@@ -222,7 +249,7 @@ height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .btn-pricelist {
@@ -235,18 +262,25 @@ height: auto;
 }
 .btn-pricelist:hover {
   color: #fff;
-  background-color: #bd187e;
+  background-color: #974690;
   border-color: #f6f6f6;
+  cursor: pointer;
 }
 .btn-pricelist:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
 
+@media screen and (min-width: 768px) {
+  .pricelist-container {
+    justify-content: space-between;
+  }
+}
+
 /* buy package styling */
 
 .tab-menu-active {
-  background-color: #bd187e;
+  background-color: #974690;
   color: white;
   padding: 15px 0;
   border: 2px #fff solid;
@@ -316,7 +350,7 @@ i.fa-check {
 @media screen and (min-width: 992px) {
 
   .package-height {
-    height: 220px
+    height: 240px
   }
 
 }
@@ -363,7 +397,7 @@ i.fa-check {
   }
 
   .package-height {
-    height: 260px;
+    height: 280px;
   }
 
 }
