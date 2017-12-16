@@ -85,21 +85,25 @@ footer {
   margin: 0 auto;
 }
 .modal-dialog {
-  width: 100%;
+  width: 95%;
   max-width: 1000px;
+  margin: 0 auto;
 }
 .modal-content {
   border-radius: 0;
 }
 .modal-header {
-  border-bottom: 1px solid #f6f6f6;
+  border-bottom: 0;
 }
 .modal-body {
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
+.table-hover td {
+  padding: 0.5rem;
+}
 .modal-footer {
-  border-top: 1px solid #f6f6f6;
+  border-top: 0;
   font-family: "Raleway", sans-serif;
   color: #272727;
 }
@@ -235,7 +239,7 @@ height: auto;
 }
 .btn-pricelist:hover {
   color: #fff;
-  background-color: #bd187e;
+  background-color: #974690;
   border-color: #f6f6f6;
   cursor: pointer;
 }
@@ -247,7 +251,7 @@ height: auto;
 /* buy package styling */
 
 .tab-menu-active {
-  background-color: #bd187e;
+  background-color: #974690;
   color: white;
   padding: 15px 0;
   border: 2px #fff solid;
