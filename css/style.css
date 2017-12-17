@@ -102,6 +102,9 @@ footer .a {
 .modal-header {
   border-bottom: 0;
 }
+.close span {
+  color: #bd187e;
+}
 .modal-body {
   font-family: "Raleway", sans-serif;
   color: #272727;
