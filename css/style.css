@@ -87,6 +87,9 @@ footer .a {
 /* modal styling */
 .modal {
   margin: 0 auto;
+  padding-right: 0 !important;
+  top: 40px;
+  bottom: 40px;
 }
 .modal-dialog {
   width: 95%;
@@ -98,6 +101,9 @@ footer .a {
 }
 .modal-header {
   border-bottom: 0;
+}
+.close span {
+  color: #bd187e;
 }
 .modal-body {
   font-family: "Raleway", sans-serif;
